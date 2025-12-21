@@ -1,0 +1,19 @@
+student_table.sql
+CREATE TABLE students (
+student_id INT PRIMARY KEY,
+name VARCHAR(50),
+age INT,
+marks INT,
+result VARCHAR(10),
+);    
+# Insertig values into table
+INSERT INTO students (student-id, name, age, marks, result) VALUES
+(1, 'Ravi', 20, 85, 'Pass'),
+(2, 'Anita', 21, 72, 'Pass'),
+(3, 'Suresh', 19, 40, 'Fail'),
+(4, 'Meena', 20, 90, 'Pass'),
+(5, 'Kiran', 22, 35, 'Fail');
+SELECT * FROM students;
+SELECT name, marks
+FROM students
+WHERE result = 'Pass';
